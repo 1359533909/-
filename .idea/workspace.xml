@@ -1,12 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6ce220cf-b46f-44c1-806b-ac0b8779ea39" name="Default Changelist" comment="" />
+    <list default="true" id="18af765c-09df-428d-ba87-c5a4932633d2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mxl/miaosha/controller/MiaoshaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mxl/miaosha/controller/MiaoshaController.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -25,8 +32,10 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectId" id="1Rtmu9eQbuhg61UOREYWhcuRsf0" />
+  <component name="ProjectId" id="1RtqLbUjmYRO6Iak2TigSUEFU9C" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
@@ -48,16 +57,27 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="6ce220cf-b46f-44c1-806b-ac0b8779ea39" name="Default Changelist" comment="" />
-      <created>1570494986829</created>
+      <changelist id="18af765c-09df-428d-ba87-c5a4932633d2" name="Default Changelist" comment="" />
+      <created>1570496684720</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1570494986829</updated>
-      <workItem from="1570494990157" duration="635000" />
+      <updated>1570496684720</updated>
+      <workItem from="1570496687970" duration="2220000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

@@ -2,6 +2,7 @@ package com.mxl.miaosha.controller;
 
 import java.util.HashMap;
 import java.util.List;
+import java.util.concurrent.locks.ReentrantLock;
 
 import com.mxl.miaosha.domain.MiaoshaOrder;
 import com.mxl.miaosha.domain.MiaoshaUser;
@@ -99,12 +100,16 @@ public class MiaoshaController implements InitializingBean {
     		return Result.error(CodeMsg.MIAO_SHA_OVER);
     	}
     	//预减库存
+		ReentrantLock lock=new ReentrantLock();
+		lock.lock();
     	long stock = redisService.decr(GoodsKey.getMiaoshaGoodsStock, ""+goodsId);//10
     	if(stock < 0) {
+			redisService.incr(GoodsKey.getMiaoshaGoodsStock, ""+goodsId);//手些事务回滚
     		 localOverMap.put(goodsId, true);
     		return Result.error(CodeMsg.MIAO_SHA_OVER);
     	}
-    	//判断是否已经秒杀到了
+    	lock.unlock();
+    	//判断是否已经秒杀到了，目的是避免重复秒杀，一个人只能秒杀一次
     	MiaoshaOrder order = orderService.getMiaoshaOrderByUserIdGoodsId(user.getId(), goodsId);
     	if(order != null) {
     		return Result.error(CodeMsg.REPEATE_MIAOSHA);
